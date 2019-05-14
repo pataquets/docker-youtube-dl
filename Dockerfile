@@ -1,6 +1,6 @@
 FROM python
 
 RUN \
-  pip install -U youtube-dl
+  pip install --no-cache-dir --upgrade youtube-dl
 
 ENTRYPOINT [ "youtube-dl" ]
